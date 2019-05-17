@@ -1,0 +1,52 @@
+{
+  "name": "nightwatch",
+  "version": "1.0.0",
+  "description": "Research for nightwatch Framework and write test scripts to execute end-to-end test case by using nightwatch with Ecommerce site",
+  "main": "global.js",
+  "scripts": {
+    "lint": "eslint .",
+    "debug": "node --inspect-brk node_modules/nightwatch/bin/runner.js --env chrome",
+    "start-server": "./node_modules/.bin/light-server -s . -p 500 -w ./reports/*.html",
+    "test": "node nightwatch ./tests -r ./html-reporter.js -e chrome",
+    "galen": "galen",
+    "test-galen": "galen test tests/galen/post/post.test.js --htmlreport reports/galen "
+  },
+  "dependencies": {
+    "@rpii/nightwatch-html-reporter": "^0.9.3",
+    "allure-commandline": "^2.9.0",
+    "chromedriver": "^73.0.0",
+    "csvtojson": "^2.0.8",
+    "exceljs": "^1.9.0",
+    "fs": "0.0.1-security",
+    "geckodriver": "^1.16.2",
+    "handlebars": "^4.1.2",
+    "iedriver": "^3.14.1",
+    "light-server": "^2.6.2",
+    "mocha": "^6.1.4",
+    "moment": "^2.24.0",
+    "nightwatch": "^1.0.19",
+    "nightwatch-data-driven": "0.0.8",
+    "nightwatch-html-reporter": "^2.0.6",
+    "npm-package-json-lint": "^3.6.0",
+    "path": "^0.12.7",
+    "q": "^1.5.1",
+    "selenium-standalone": "^6.16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vihoang0706/autoTest_PNVTeam1.git"
+  },
+  "keywords": [
+    "nightwatch",
+    "automation",
+    "testing",
+    "galen",
+    "framework"
+  ],
+  "author": "PNVTeam1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vihoang0706/autoTest_PNVTeam1/issues"
+  },
+  "homepage": "https://github.com/vihoang0706/autoTest_PNVTeam1#readme"
+}
