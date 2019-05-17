@@ -1,0 +1,99 @@
+@objects
+    header          #header .middle-wrapper
+        logo            img
+        caption         h1
+    menu            #menu   .middle-wrapper
+
+
+= Header =
+    header:
+        height ~69px
+
+        @on desktop
+            centered horizontally inside screen
+
+        @on mobile
+            inside screen 0px left right
+
+    header.logo:
+        inside header 0px left, 8 to 15px top bottom
+        width 48px
+        height 48px
+
+    header.caption:
+        right-of header.logo ~22px
+        @on desktop
+            text is "Sample Website for Galen Framework"
+        @on mobile
+            text is "Sample Website"
+
+= Menu =
+    menu:
+         below header 1 px
+         aligned vertically all header
+
+
+
+
+@objects
+    heading_title             .wp-heading-inline
+    form_caption              .form-wrap h2
+    form_add_tag              #addtag
+    term_name_wrap            .term-name-wrap
+        tag_name_label          label
+        tag_name_textfield     #tag-name
+        tag_name_caption       p
+    term_slug_wrap             .term-slug-wrap
+        tag_slug_label         label
+        tag_slug_textfield     #slug-name
+        tag_slug_caption       p
+    term_description_wrap      .term-description-wrap
+        tag_description_label  label
+        tag_description_textfield   #tag-description
+        tag_description_caption p
+    addTagbutton                #submit
+    search_box                  .search-box
+        search_label            label
+        search_textfield        #tag-search-input
+        searchButton            #search-submit
+
+@set
+    heading_title_text          Tags
+    form_caption_text           Add New Tag
+    tag_name_label_text         Name
+    tag_slug_label_text         Slug
+    tag_description_label_text  Description
+    tag_name_caption_text       The name is how it appears on your site.
+    tag_slug_caption_text       The “slug” is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens.
+    tag_description_caption_text The description is not prominent by default; however, some themes may show it.
+
+= Post =
+
+    heading_title:
+        above form_caption
+
+    heading_title:
+        text is "${heading_title_text}"
+
+    form_caption:
+        text is "${form_caption_text}"
+
+    term_name_wrap.tag_name_label:
+        text is "${tag_name_label_text}"
+
+    term_slug_wrap.tag_slug_label:
+        text is "${tag_slug_label_text}"
+
+    term_description_wrap.tag_description_label:
+        text is "${tag_description_label_text}"
+    
+    term_name_wrap.tag_name_caption:
+        text is "${tag_name_caption_text}"
+
+    term_slug_wrap.tag_slug_caption:
+        text is "${tag_slug_caption_text}"
+    
+    term_description_wrap.tag_description_caption:
+        text is "${tag_description_caption_text}"
+    
+

@@ -1,0 +1,224 @@
+{
+  "testId" : "2-test-on-chrome-on-desktop",
+  "name" : "Test on chrome on desktop",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Check layout: page-objects/galen/demo/homepage.gspec included tags: desktop",
+      "status" : "info",
+      "time" : 1557799409570,
+      "includedTags" : [ "desktop" ],
+      "sections" : [ {
+        "name" : "Header",
+        "place" : {
+          "filePath" : "page-objects/galen/demo/homepage.gspec",
+          "lineNumber" : 8
+        },
+        "objects" : [ {
+          "name" : "header",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "page-objects/galen/demo/homepage.gspec",
+              "lineNumber" : 10
+            },
+            "name" : "height ~69px",
+            "meta" : [ {
+              "from" : {
+                "object" : "header",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "header",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "67 to 71px",
+              "realDistance" : "69px"
+            } ],
+            "highlight" : [ "header" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "page-objects/galen/demo/homepage.gspec",
+              "lineNumber" : 13
+            },
+            "name" : "centered horizontally inside screen",
+            "highlight" : [ "header", "screen" ]
+          } ]
+        }, {
+          "name" : "header.logo",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "page-objects/galen/demo/homepage.gspec",
+              "lineNumber" : 19
+            },
+            "name" : "inside header 0px left, 8 to 15px top bottom",
+            "meta" : [ {
+              "from" : {
+                "object" : "header.logo",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "header",
+                "edge" : "left"
+              },
+              "expectedDistance" : "0px",
+              "realDistance" : "0px"
+            }, {
+              "from" : {
+                "object" : "header.logo",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "header",
+                "edge" : "top"
+              },
+              "expectedDistance" : "8 to 15px",
+              "realDistance" : "13px"
+            }, {
+              "from" : {
+                "object" : "header.logo",
+                "edge" : "bottom"
+              },
+              "to" : {
+                "object" : "header",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "8 to 15px",
+              "realDistance" : "8px"
+            } ],
+            "highlight" : [ "header.logo", "header" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "page-objects/galen/demo/homepage.gspec",
+              "lineNumber" : 20
+            },
+            "name" : "width 48px",
+            "meta" : [ {
+              "from" : {
+                "object" : "header.logo",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "header.logo",
+                "edge" : "right"
+              },
+              "expectedDistance" : "48px",
+              "realDistance" : "48px"
+            } ],
+            "highlight" : [ "header.logo" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "page-objects/galen/demo/homepage.gspec",
+              "lineNumber" : 21
+            },
+            "name" : "height 48px",
+            "meta" : [ {
+              "from" : {
+                "object" : "header.logo",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "header.logo",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "48px",
+              "realDistance" : "48px"
+            } ],
+            "highlight" : [ "header.logo" ]
+          } ]
+        }, {
+          "name" : "header.caption",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "page-objects/galen/demo/homepage.gspec",
+              "lineNumber" : 24
+            },
+            "name" : "right-of header.logo ~22px",
+            "meta" : [ {
+              "from" : {
+                "object" : "header.caption",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "header.logo",
+                "edge" : "right"
+              },
+              "expectedDistance" : "20 to 24px",
+              "realDistance" : "22px"
+            } ],
+            "highlight" : [ "header.caption", "header.logo" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "page-objects/galen/demo/homepage.gspec",
+              "lineNumber" : 26
+            },
+            "name" : "text is \"Sample Website for Galen Framework\"",
+            "highlight" : [ "header.caption" ]
+          } ]
+        } ]
+      }, {
+        "name" : "Menu",
+        "place" : {
+          "filePath" : "page-objects/galen/demo/homepage.gspec",
+          "lineNumber" : 30
+        },
+        "objects" : [ {
+          "name" : "menu",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "page-objects/galen/demo/homepage.gspec",
+              "lineNumber" : 32
+            },
+            "name" : "below header 1 px",
+            "meta" : [ {
+              "from" : {
+                "object" : "menu",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "header",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "1px",
+              "realDistance" : "1px"
+            } ],
+            "highlight" : [ "menu", "header" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "page-objects/galen/demo/homepage.gspec",
+              "lineNumber" : 33
+            },
+            "name" : "aligned vertically all header",
+            "highlight" : [ "menu", "header" ]
+          } ]
+        } ]
+      } ],
+      "objects" : {
+        "header.logo" : {
+          "area" : [ 55, 13, 48, 48 ]
+        },
+        "header" : {
+          "area" : [ 55, 0, 900, 69 ]
+        },
+        "screen" : {
+          "area" : [ 0, 0, 1011, 733 ]
+        },
+        "header.caption" : {
+          "area" : [ 125, 20, 610, 39 ]
+        },
+        "menu" : {
+          "area" : [ 55, 70, 900, 63 ]
+        }
+      },
+      "screenshot" : "layout-2-screenshot.png",
+      "type" : "layout"
+    } ]
+  }
+}

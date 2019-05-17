@@ -1,0 +1,1072 @@
+{
+  "testId" : "1-verify-that-post-page-displays-correctly-on-desktop-device",
+  "name" : "Verify that post page displays correctly  on desktop device",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Verify that post page displays correctly ",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "Type \"admin\" to email on Login page",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "css: input#user_login",
+          "type" : "text"
+        } ],
+        "time" : 1558075881229,
+        "type" : "node"
+      }, {
+        "name" : "Type \"123456789\" to password on Login page",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "css: input#user_pass",
+          "type" : "text"
+        } ],
+        "time" : 1558075881268,
+        "type" : "node"
+      }, {
+        "name" : "Click submitButton on Login page",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "css: input#wp-submit",
+          "type" : "text"
+        } ],
+        "time" : 1558075881318,
+        "type" : "node"
+      }, {
+        "name" : "Click linkPost on Dashboard Page",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "xpath: //div[@class='wp-menu-name' and text()= 'Posts']",
+          "type" : "text"
+        } ],
+        "time" : 1558075882678,
+        "type" : "node"
+      }, {
+        "name" : "Click dismissButton on Post page",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "css: .nux-dot-tip__disable",
+          "type" : "text"
+        } ],
+        "time" : 1558075885056,
+        "type" : "node"
+      }, {
+        "name" : "Check layout: specs/post/postPage.gspec included tags: desktop",
+        "status" : "info",
+        "time" : 1558075887318,
+        "includedTags" : [ "desktop" ],
+        "sections" : [ {
+          "name" : "Post Header Setting",
+          "place" : {
+            "filePath" : "specs/post/postPage.gspec",
+            "lineNumber" : 42
+          },
+          "objects" : [ {
+            "name" : "toolbar.insert_button",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 44
+              },
+              "name" : "aligned horizontally all toolbar.undo_button 0px",
+              "highlight" : [ "toolbar.insert_button", "toolbar.undo_button" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 48
+              },
+              "name" : "width 36 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "toolbar.insert_button",
+                  "edge" : "left"
+                },
+                "to" : {
+                  "object" : "toolbar.insert_button",
+                  "edge" : "right"
+                },
+                "expectedDistance" : "36px",
+                "realDistance" : "36px"
+              } ],
+              "highlight" : [ "toolbar.insert_button" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 49
+              },
+              "name" : "height 36 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "toolbar.insert_button",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "toolbar.insert_button",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "36px",
+                "realDistance" : "36px"
+              } ],
+              "highlight" : [ "toolbar.insert_button" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 50
+              },
+              "name" : "inside toolbar",
+              "meta" : [ ],
+              "highlight" : [ "toolbar.insert_button", "toolbar" ]
+            } ]
+          }, {
+            "name" : "header__settings.preview_button",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 46
+              },
+              "name" : "left-of header__settings.publish_button 7 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "header__settings.preview_button",
+                  "edge" : "right"
+                },
+                "to" : {
+                  "object" : "header__settings.publish_button",
+                  "edge" : "left"
+                },
+                "expectedDistance" : "7px",
+                "realDistance" : "7px"
+              } ],
+              "highlight" : [ "header__settings.preview_button", "header__settings.publish_button" ]
+            } ]
+          }, {
+            "name" : "toolbar.undo_button",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 48
+              },
+              "name" : "width 36 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "toolbar.undo_button",
+                  "edge" : "left"
+                },
+                "to" : {
+                  "object" : "toolbar.undo_button",
+                  "edge" : "right"
+                },
+                "expectedDistance" : "36px",
+                "realDistance" : "36px"
+              } ],
+              "highlight" : [ "toolbar.undo_button" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 49
+              },
+              "name" : "height 36 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "toolbar.undo_button",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "toolbar.undo_button",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "36px",
+                "realDistance" : "36px"
+              } ],
+              "highlight" : [ "toolbar.undo_button" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 50
+              },
+              "name" : "inside toolbar",
+              "meta" : [ ],
+              "highlight" : [ "toolbar.undo_button", "toolbar" ]
+            } ]
+          }, {
+            "name" : "toolbar.redo_button",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 48
+              },
+              "name" : "width 36 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "toolbar.redo_button",
+                  "edge" : "left"
+                },
+                "to" : {
+                  "object" : "toolbar.redo_button",
+                  "edge" : "right"
+                },
+                "expectedDistance" : "36px",
+                "realDistance" : "36px"
+              } ],
+              "highlight" : [ "toolbar.redo_button" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 49
+              },
+              "name" : "height 36 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "toolbar.redo_button",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "toolbar.redo_button",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "36px",
+                "realDistance" : "36px"
+              } ],
+              "highlight" : [ "toolbar.redo_button" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 50
+              },
+              "name" : "inside toolbar",
+              "meta" : [ ],
+              "highlight" : [ "toolbar.redo_button", "toolbar" ]
+            } ]
+          }, {
+            "name" : "toolbar.table_content_button",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 48
+              },
+              "name" : "width 36 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "toolbar.table_content_button",
+                  "edge" : "left"
+                },
+                "to" : {
+                  "object" : "toolbar.table_content_button",
+                  "edge" : "right"
+                },
+                "expectedDistance" : "36px",
+                "realDistance" : "36px"
+              } ],
+              "highlight" : [ "toolbar.table_content_button" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 49
+              },
+              "name" : "height 36 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "toolbar.table_content_button",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "toolbar.table_content_button",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "36px",
+                "realDistance" : "36px"
+              } ],
+              "highlight" : [ "toolbar.table_content_button" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 50
+              },
+              "name" : "inside toolbar",
+              "meta" : [ ],
+              "highlight" : [ "toolbar.table_content_button", "toolbar" ]
+            } ]
+          }, {
+            "name" : "toolbar.block_navigation_button",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 48
+              },
+              "name" : "width 36 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "toolbar.block_navigation_button",
+                  "edge" : "left"
+                },
+                "to" : {
+                  "object" : "toolbar.block_navigation_button",
+                  "edge" : "right"
+                },
+                "expectedDistance" : "36px",
+                "realDistance" : "36px"
+              } ],
+              "highlight" : [ "toolbar.block_navigation_button" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 49
+              },
+              "name" : "height 36 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "toolbar.block_navigation_button",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "toolbar.block_navigation_button",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "36px",
+                "realDistance" : "36px"
+              } ],
+              "highlight" : [ "toolbar.block_navigation_button" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 50
+              },
+              "name" : "inside toolbar",
+              "meta" : [ ],
+              "highlight" : [ "toolbar.block_navigation_button", "toolbar" ]
+            } ]
+          }, {
+            "name" : "header__settings.setting_button.icon_setting",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 54
+              },
+              "name" : "visible",
+              "highlight" : [ "header__settings.setting_button.icon_setting" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 55
+              },
+              "name" : "left-of header__settings.show_more_tool_button 12 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "header__settings.setting_button.icon_setting",
+                  "edge" : "right"
+                },
+                "to" : {
+                  "object" : "header__settings.show_more_tool_button",
+                  "edge" : "left"
+                },
+                "expectedDistance" : "12px",
+                "realDistance" : "12px"
+              } ],
+              "highlight" : [ "header__settings.setting_button.icon_setting", "header__settings.show_more_tool_button" ]
+            } ]
+          } ]
+        }, {
+          "name" : "Form Add Post",
+          "place" : {
+            "filePath" : "specs/post/postPage.gspec",
+            "lineNumber" : 57
+          },
+          "objects" : [ {
+            "name" : "editor_body.title_label",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 59
+              },
+              "name" : "inside editor_body.title_textfield",
+              "meta" : [ ],
+              "highlight" : [ "editor_body.title_label", "editor_body.title_textfield" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 61
+              },
+              "name" : "text is \"Add title\"",
+              "highlight" : [ "editor_body.title_label" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 62
+              },
+              "name" : "css font-size is \"16px\"",
+              "highlight" : [ "editor_body.title_label" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 63
+              },
+              "name" : "css font-family starts \"-apple-system\"",
+              "highlight" : [ "editor_body.title_label" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 64
+              },
+              "name" : "css font-family ends \"serif\"",
+              "highlight" : [ "editor_body.title_label" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 65
+              },
+              "name" : "css color is \"rgba(68, 68, 68, 1)\"",
+              "highlight" : [ "editor_body.title_label" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 66
+              },
+              "name" : "css border-color is \"rgb(68, 68, 68)\"",
+              "highlight" : [ "editor_body.title_label" ]
+            } ]
+          }, {
+            "name" : "editor_body.title_textfield",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 68
+              },
+              "name" : "width 588 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "editor_body.title_textfield",
+                  "edge" : "left"
+                },
+                "to" : {
+                  "object" : "editor_body.title_textfield",
+                  "edge" : "right"
+                },
+                "expectedDistance" : "588px",
+                "realDistance" : "588px"
+              } ],
+              "highlight" : [ "editor_body.title_textfield" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 69
+              },
+              "name" : "height 84 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "editor_body.title_textfield",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "editor_body.title_textfield",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "84px",
+                "realDistance" : "84px"
+              } ],
+              "highlight" : [ "editor_body.title_textfield" ]
+            } ]
+          }, {
+            "name" : "editor_body.content_textfield",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 71
+              },
+              "name" : "width 588 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "editor_body.content_textfield",
+                  "edge" : "left"
+                },
+                "to" : {
+                  "object" : "editor_body.content_textfield",
+                  "edge" : "right"
+                },
+                "expectedDistance" : "588px",
+                "realDistance" : "588px"
+              } ],
+              "highlight" : [ "editor_body.content_textfield" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 72
+              },
+              "name" : "height 200 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "editor_body.content_textfield",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "editor_body.content_textfield",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "200px",
+                "realDistance" : "200px"
+              } ],
+              "highlight" : [ "editor_body.content_textfield" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 73
+              },
+              "name" : "below editor_body.title_textfield 4 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "editor_body.content_textfield",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "editor_body.title_textfield",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "4px",
+                "realDistance" : "4px"
+              } ],
+              "highlight" : [ "editor_body.content_textfield", "editor_body.title_textfield" ]
+            } ]
+          } ]
+        }, {
+          "name" : "Side bar",
+          "place" : {
+            "filePath" : "specs/post/postPage.gspec",
+            "lineNumber" : 75
+          },
+          "objects" : [ {
+            "name" : "panel_tab",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 79
+              },
+              "name" : "contains panel_tab.tab_item-*",
+              "highlight" : [ "panel_tab", "panel_tab.tab_item-1", "panel_tab.tab_item-2" ]
+            } ]
+          }, {
+            "name" : "panel_tab.tab_item-1",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 81
+              },
+              "name" : "text is \"Document\"",
+              "highlight" : [ "panel_tab.tab_item-1" ]
+            } ]
+          }, {
+            "name" : "panel_tab.tab_item-2",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 83
+              },
+              "name" : "text is \"Block\"",
+              "highlight" : [ "panel_tab.tab_item-2" ]
+            } ]
+          }, {
+            "name" : "components_panel_item-1",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 85
+              },
+              "name" : "width 279 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "components_panel_item-1",
+                  "edge" : "left"
+                },
+                "to" : {
+                  "object" : "components_panel_item-1",
+                  "edge" : "right"
+                },
+                "expectedDistance" : "279px",
+                "realDistance" : "279px"
+              } ],
+              "highlight" : [ "components_panel_item-1" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 86
+              },
+              "name" : "height 47 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "components_panel_item-1",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "components_panel_item-1",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "47px",
+                "realDistance" : "47px"
+              } ],
+              "highlight" : [ "components_panel_item-1" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 89
+              },
+              "name" : "text is \"Status & Visibility\"",
+              "highlight" : [ "components_panel_item-1" ]
+            } ]
+          }, {
+            "name" : "components_panel_item-2",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 85
+              },
+              "name" : "width 279 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "components_panel_item-2",
+                  "edge" : "left"
+                },
+                "to" : {
+                  "object" : "components_panel_item-2",
+                  "edge" : "right"
+                },
+                "expectedDistance" : "279px",
+                "realDistance" : "279px"
+              } ],
+              "highlight" : [ "components_panel_item-2" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 86
+              },
+              "name" : "height 47 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "components_panel_item-2",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "components_panel_item-2",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "47px",
+                "realDistance" : "47px"
+              } ],
+              "highlight" : [ "components_panel_item-2" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 91
+              },
+              "name" : "text is \"Categories\"",
+              "highlight" : [ "components_panel_item-2" ]
+            } ]
+          }, {
+            "name" : "components_panel_item-3",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 85
+              },
+              "name" : "width 279 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "components_panel_item-3",
+                  "edge" : "left"
+                },
+                "to" : {
+                  "object" : "components_panel_item-3",
+                  "edge" : "right"
+                },
+                "expectedDistance" : "279px",
+                "realDistance" : "279px"
+              } ],
+              "highlight" : [ "components_panel_item-3" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 86
+              },
+              "name" : "height 47 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "components_panel_item-3",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "components_panel_item-3",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "47px",
+                "realDistance" : "47px"
+              } ],
+              "highlight" : [ "components_panel_item-3" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 93
+              },
+              "name" : "text is \"Tags\"",
+              "highlight" : [ "components_panel_item-3" ]
+            } ]
+          }, {
+            "name" : "components_panel_item-4",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 85
+              },
+              "name" : "width 279 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "components_panel_item-4",
+                  "edge" : "left"
+                },
+                "to" : {
+                  "object" : "components_panel_item-4",
+                  "edge" : "right"
+                },
+                "expectedDistance" : "279px",
+                "realDistance" : "279px"
+              } ],
+              "highlight" : [ "components_panel_item-4" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 86
+              },
+              "name" : "height 47 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "components_panel_item-4",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "components_panel_item-4",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "47px",
+                "realDistance" : "47px"
+              } ],
+              "highlight" : [ "components_panel_item-4" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 95
+              },
+              "name" : "text is \"Featured Image\"",
+              "highlight" : [ "components_panel_item-4" ]
+            } ]
+          }, {
+            "name" : "components_panel_item-5",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 85
+              },
+              "name" : "width 279 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "components_panel_item-5",
+                  "edge" : "left"
+                },
+                "to" : {
+                  "object" : "components_panel_item-5",
+                  "edge" : "right"
+                },
+                "expectedDistance" : "279px",
+                "realDistance" : "279px"
+              } ],
+              "highlight" : [ "components_panel_item-5" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 86
+              },
+              "name" : "height 47 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "components_panel_item-5",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "components_panel_item-5",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "47px",
+                "realDistance" : "47px"
+              } ],
+              "highlight" : [ "components_panel_item-5" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 97
+              },
+              "name" : "text is \"Excerpt\"",
+              "highlight" : [ "components_panel_item-5" ]
+            } ]
+          }, {
+            "name" : "components_panel_item-6",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 85
+              },
+              "name" : "width 279 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "components_panel_item-6",
+                  "edge" : "left"
+                },
+                "to" : {
+                  "object" : "components_panel_item-6",
+                  "edge" : "right"
+                },
+                "expectedDistance" : "279px",
+                "realDistance" : "279px"
+              } ],
+              "highlight" : [ "components_panel_item-6" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 86
+              },
+              "name" : "height 47 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "components_panel_item-6",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "components_panel_item-6",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "47px",
+                "realDistance" : "47px"
+              } ],
+              "highlight" : [ "components_panel_item-6" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 99
+              },
+              "name" : "text is \"Discussion\"",
+              "highlight" : [ "components_panel_item-6" ]
+            } ]
+          } ],
+          "sections" : [ {
+            "name" : "amount of visible &tab_items should be 2",
+            "place" : {
+              "filePath" : "specs/post/postPage.gspec",
+              "lineNumber" : 76
+            },
+            "objects" : [ {
+              "name" : "global",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "specs\\post/../galen-extras/galen-extras-rules.gspec",
+                  "lineNumber" : 113
+                },
+                "name" : "count visible \"&tab_items\" is 2",
+                "highlight" : [ "panel_tab.tab_item-1", "panel_tab.tab_item-2" ]
+              } ]
+            } ]
+          }, {
+            "name" : "every &tab_item has height ~ 48px",
+            "place" : {
+              "filePath" : "specs/post/postPage.gspec",
+              "lineNumber" : 77
+            },
+            "objects" : [ {
+              "name" : "panel_tab.tab_item-1",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "specs\\post/../galen-extras/galen-extras-rules.gspec",
+                  "lineNumber" : 265
+                },
+                "name" : "height ~ 48px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "panel_tab.tab_item-1",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "panel_tab.tab_item-1",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "46 to 50px",
+                  "realDistance" : "48px"
+                } ],
+                "highlight" : [ "panel_tab.tab_item-1" ]
+              } ]
+            }, {
+              "name" : "panel_tab.tab_item-2",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "specs\\post/../galen-extras/galen-extras-rules.gspec",
+                  "lineNumber" : 265
+                },
+                "name" : "height ~ 48px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "panel_tab.tab_item-2",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "panel_tab.tab_item-2",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "46 to 50px",
+                  "realDistance" : "48px"
+                } ],
+                "highlight" : [ "panel_tab.tab_item-2" ]
+              } ]
+            } ]
+          }, {
+            "name" : "amount of visible components_panel_item-* should be 6",
+            "place" : {
+              "filePath" : "specs/post/postPage.gspec",
+              "lineNumber" : 87
+            },
+            "objects" : [ {
+              "name" : "global",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "specs\\post/../galen-extras/galen-extras-rules.gspec",
+                  "lineNumber" : 113
+                },
+                "name" : "count visible \"components_panel_item-*\" is 6",
+                "highlight" : [ "components_panel_item-6", "components_panel_item-1", "components_panel_item-5", "components_panel_item-4", "components_panel_item-3", "components_panel_item-2" ]
+              } ]
+            } ]
+          } ]
+        } ],
+        "objects" : {
+          "components_panel_item-6" : {
+            "area" : [ 749, 534, 279, 47 ]
+          },
+          "panel_tab.tab_item-1" : {
+            "area" : [ 749, 88, 92, 48 ]
+          },
+          "panel_tab.tab_item-2" : {
+            "area" : [ 840, 88, 61, 48 ]
+          },
+          "header__settings.preview_button" : {
+            "area" : [ 786, 43, 70, 33 ]
+          },
+          "toolbar.undo_button" : {
+            "area" : [ 204, 41, 36, 36 ]
+          },
+          "header__settings.setting_button.icon_setting" : {
+            "area" : [ 960, 49, 20, 20 ]
+          },
+          "toolbar" : {
+            "area" : [ 168, 40, 180, 39 ]
+          },
+          "toolbar.table_content_button" : {
+            "area" : [ 276, 41, 36, 36 ]
+          },
+          "editor_body.title_textfield" : {
+            "area" : [ 160, 172, 588, 84 ]
+          },
+          "panel_tab" : {
+            "area" : [ 749, 88, 279, 50 ]
+          },
+          "toolbar.redo_button" : {
+            "area" : [ 240, 41, 36, 36 ]
+          },
+          "components_panel_item-1" : {
+            "area" : [ 749, 138, 279, 47 ]
+          },
+          "editor_body.title_label" : {
+            "area" : [ 159, 171, 1, 1 ]
+          },
+          "toolbar.insert_button" : {
+            "area" : [ 168, 41, 36, 36 ]
+          },
+          "components_panel_item-5" : {
+            "area" : [ 749, 486, 279, 47 ]
+          },
+          "header__settings.publish_button" : {
+            "area" : [ 863, 43, 77, 33 ]
+          },
+          "toolbar.block_navigation_button" : {
+            "area" : [ 312, 41, 36, 36 ]
+          },
+          "editor_body.content_textfield" : {
+            "area" : [ 160, 260, 588, 200 ]
+          },
+          "components_panel_item-4" : {
+            "area" : [ 749, 438, 279, 47 ]
+          },
+          "components_panel_item-3" : {
+            "area" : [ 749, 390, 279, 47 ]
+          },
+          "header__settings.show_more_tool_button" : {
+            "area" : [ 992, 41, 28, 36 ]
+          },
+          "components_panel_item-2" : {
+            "area" : [ 749, 342, 279, 47 ]
+          }
+        },
+        "screenshot" : "layout-1-screenshot.png",
+        "type" : "layout"
+      } ],
+      "time" : 1558075881150,
+      "type" : "node"
+    } ]
+  }
+}

@@ -1,0 +1,584 @@
+{
+  "testId" : "1-post-page-on-device",
+  "name" : "Post Page on  device",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Verify that post page displays all elements correctly ",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "Type \"admin\" to username on Login page",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "css: input[id='user_login']",
+          "type" : "text"
+        } ],
+        "time" : 1557972918506,
+        "type" : "node"
+      }, {
+        "name" : "Type \"123456789\" to password on Login page",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "css: input[id='user_pass']",
+          "type" : "text"
+        } ],
+        "time" : 1557972918545,
+        "type" : "node"
+      }, {
+        "name" : "Click loginButton on Login page",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "css: input[id='wp-submit']",
+          "type" : "text"
+        } ],
+        "time" : 1557972918582,
+        "type" : "node"
+      }, {
+        "name" : "Click linkPost on Dashboard Page",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "xpath: //div[@class='wp-menu-name' and text()= 'Posts']",
+          "type" : "text"
+        } ],
+        "time" : 1557972919435,
+        "type" : "node"
+      }, {
+        "name" : "Click dismissButton on Post page",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "css: .nux-dot-tip__disable",
+          "type" : "text"
+        } ],
+        "time" : 1557972921857,
+        "type" : "node"
+      }, {
+        "name" : "Check layout: specs/post/postPage.gspec included tags: ",
+        "status" : "error",
+        "time" : 1557972923254,
+        "sections" : [ {
+          "name" : "Form Add Post",
+          "place" : {
+            "filePath" : "specs/post/postPage.gspec",
+            "lineNumber" : 15
+          },
+          "objects" : [ {
+            "name" : "post_title_label",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 18
+              },
+              "name" : "inside post_title_textfield",
+              "meta" : [ ],
+              "highlight" : [ "post_title_label", "post_title_textfield" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 21
+              },
+              "name" : "text is \"Add title\"",
+              "highlight" : [ "post_title_label" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 22
+              },
+              "name" : "css font-size is \"16px\"",
+              "highlight" : [ "post_title_label" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 23
+              },
+              "name" : "css font-family starts \"-apple-system\"",
+              "highlight" : [ "post_title_label" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 24
+              },
+              "name" : "css font-family ends \"serif\"",
+              "highlight" : [ "post_title_label" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 25
+              },
+              "name" : "css color is \"rgba(68, 68, 68, 1)\"",
+              "highlight" : [ "post_title_label" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 26
+              },
+              "name" : "css border-color is \"rgb(68, 68, 68)\"",
+              "highlight" : [ "post_title_label" ]
+            } ]
+          }, {
+            "name" : "post_title_textfield",
+            "specs" : [ {
+              "status" : "error",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 29
+              },
+              "name" : "width 588 px",
+              "errors" : [ "\"post_title_textfield\" width is 548px instead of 588px" ],
+              "meta" : [ {
+                "from" : {
+                  "object" : "post_title_textfield",
+                  "edge" : "left"
+                },
+                "to" : {
+                  "object" : "post_title_textfield",
+                  "edge" : "right"
+                },
+                "expectedDistance" : "588px",
+                "realDistance" : "548px"
+              } ],
+              "highlight" : [ "post_title_textfield" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 30
+              },
+              "name" : "height 84 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "post_title_textfield",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "post_title_textfield",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "84px",
+                "realDistance" : "84px"
+              } ],
+              "highlight" : [ "post_title_textfield" ]
+            } ]
+          }, {
+            "name" : "post_content_textfield",
+            "specs" : [ {
+              "status" : "error",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 33
+              },
+              "name" : "width 588 px",
+              "errors" : [ "\"post_content_textfield\" width is 548px instead of 588px" ],
+              "meta" : [ {
+                "from" : {
+                  "object" : "post_content_textfield",
+                  "edge" : "left"
+                },
+                "to" : {
+                  "object" : "post_content_textfield",
+                  "edge" : "right"
+                },
+                "expectedDistance" : "588px",
+                "realDistance" : "548px"
+              } ],
+              "highlight" : [ "post_content_textfield" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 34
+              },
+              "name" : "height 200 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "post_content_textfield",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "post_content_textfield",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "200px",
+                "realDistance" : "200px"
+              } ],
+              "highlight" : [ "post_content_textfield" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 35
+              },
+              "name" : "below post_title_textfield 4 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "post_content_textfield",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "post_title_textfield",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "4px",
+                "realDistance" : "4px"
+              } ],
+              "highlight" : [ "post_content_textfield", "post_title_textfield" ]
+            } ]
+          } ]
+        }, {
+          "name" : "Post Header Setting",
+          "place" : {
+            "filePath" : "specs/post/postPage.gspec",
+            "lineNumber" : 37
+          },
+          "objects" : [ {
+            "name" : "post_setting_button.img_setting",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 40
+              },
+              "name" : "visible",
+              "highlight" : [ "post_setting_button.img_setting" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 41
+              },
+              "name" : "left-of post_show_more_tool_button 12 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "post_setting_button.img_setting",
+                  "edge" : "right"
+                },
+                "to" : {
+                  "object" : "post_show_more_tool_button",
+                  "edge" : "left"
+                },
+                "expectedDistance" : "12px",
+                "realDistance" : "12px"
+              } ],
+              "highlight" : [ "post_setting_button.img_setting", "post_show_more_tool_button" ]
+            } ]
+          } ]
+        }, {
+          "name" : "Side bar",
+          "place" : {
+            "filePath" : "specs/post/postPage.gspec",
+            "lineNumber" : 43
+          },
+          "objects" : [ {
+            "name" : "components_panel_item-1",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 45
+              },
+              "name" : "width 279 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "components_panel_item-1",
+                  "edge" : "left"
+                },
+                "to" : {
+                  "object" : "components_panel_item-1",
+                  "edge" : "right"
+                },
+                "expectedDistance" : "279px",
+                "realDistance" : "279px"
+              } ],
+              "highlight" : [ "components_panel_item-1" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 46
+              },
+              "name" : "height 47 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "components_panel_item-1",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "components_panel_item-1",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "47px",
+                "realDistance" : "47px"
+              } ],
+              "highlight" : [ "components_panel_item-1" ]
+            } ]
+          }, {
+            "name" : "components_panel_item-2",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 45
+              },
+              "name" : "width 279 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "components_panel_item-2",
+                  "edge" : "left"
+                },
+                "to" : {
+                  "object" : "components_panel_item-2",
+                  "edge" : "right"
+                },
+                "expectedDistance" : "279px",
+                "realDistance" : "279px"
+              } ],
+              "highlight" : [ "components_panel_item-2" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 46
+              },
+              "name" : "height 47 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "components_panel_item-2",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "components_panel_item-2",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "47px",
+                "realDistance" : "47px"
+              } ],
+              "highlight" : [ "components_panel_item-2" ]
+            } ]
+          }, {
+            "name" : "components_panel_item-3",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 45
+              },
+              "name" : "width 279 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "components_panel_item-3",
+                  "edge" : "left"
+                },
+                "to" : {
+                  "object" : "components_panel_item-3",
+                  "edge" : "right"
+                },
+                "expectedDistance" : "279px",
+                "realDistance" : "279px"
+              } ],
+              "highlight" : [ "components_panel_item-3" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 46
+              },
+              "name" : "height 47 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "components_panel_item-3",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "components_panel_item-3",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "47px",
+                "realDistance" : "47px"
+              } ],
+              "highlight" : [ "components_panel_item-3" ]
+            } ]
+          }, {
+            "name" : "components_panel_item-4",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 45
+              },
+              "name" : "width 279 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "components_panel_item-4",
+                  "edge" : "left"
+                },
+                "to" : {
+                  "object" : "components_panel_item-4",
+                  "edge" : "right"
+                },
+                "expectedDistance" : "279px",
+                "realDistance" : "279px"
+              } ],
+              "highlight" : [ "components_panel_item-4" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 46
+              },
+              "name" : "height 47 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "components_panel_item-4",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "components_panel_item-4",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "47px",
+                "realDistance" : "47px"
+              } ],
+              "highlight" : [ "components_panel_item-4" ]
+            } ]
+          }, {
+            "name" : "components_panel_item-5",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 45
+              },
+              "name" : "width 279 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "components_panel_item-5",
+                  "edge" : "left"
+                },
+                "to" : {
+                  "object" : "components_panel_item-5",
+                  "edge" : "right"
+                },
+                "expectedDistance" : "279px",
+                "realDistance" : "279px"
+              } ],
+              "highlight" : [ "components_panel_item-5" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 46
+              },
+              "name" : "height 47 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "components_panel_item-5",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "components_panel_item-5",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "47px",
+                "realDistance" : "47px"
+              } ],
+              "highlight" : [ "components_panel_item-5" ]
+            } ]
+          }, {
+            "name" : "components_panel_item-6",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 45
+              },
+              "name" : "width 279 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "components_panel_item-6",
+                  "edge" : "left"
+                },
+                "to" : {
+                  "object" : "components_panel_item-6",
+                  "edge" : "right"
+                },
+                "expectedDistance" : "279px",
+                "realDistance" : "279px"
+              } ],
+              "highlight" : [ "components_panel_item-6" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/post/postPage.gspec",
+                "lineNumber" : 46
+              },
+              "name" : "height 47 px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "components_panel_item-6",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "components_panel_item-6",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "47px",
+                "realDistance" : "47px"
+              } ],
+              "highlight" : [ "components_panel_item-6" ]
+            } ]
+          } ]
+        } ],
+        "objects" : {
+          "post_title_textfield" : {
+            "area" : [ 160, 172, 548, 84 ]
+          },
+          "components_panel_item-6" : {
+            "area" : [ 709, 534, 279, 47 ]
+          },
+          "components_panel_item-1" : {
+            "area" : [ 709, 138, 279, 47 ]
+          },
+          "post_show_more_tool_button" : {
+            "area" : [ 952, 41, 28, 36 ]
+          },
+          "post_content_textfield" : {
+            "area" : [ 160, 260, 548, 200 ]
+          },
+          "post_setting_button.img_setting" : {
+            "area" : [ 920, 49, 20, 20 ]
+          },
+          "components_panel_item-5" : {
+            "area" : [ 709, 486, 279, 47 ]
+          },
+          "post_title_label" : {
+            "area" : [ 159, 171, 1, 1 ]
+          },
+          "components_panel_item-4" : {
+            "area" : [ 709, 438, 279, 47 ]
+          },
+          "components_panel_item-3" : {
+            "area" : [ 709, 390, 279, 47 ]
+          },
+          "components_panel_item-2" : {
+            "area" : [ 709, 342, 279, 47 ]
+          }
+        },
+        "screenshot" : "layout-1-screenshot.png",
+        "type" : "layout"
+      } ],
+      "time" : 1557972918424,
+      "type" : "node"
+    }, {
+      "name" : "Screenshot",
+      "status" : "info",
+      "attachments" : [ "file-2-Screenshot" ],
+      "time" : 1557972923255,
+      "type" : "node"
+    } ]
+  }
+}

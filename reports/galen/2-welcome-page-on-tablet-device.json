@@ -1,0 +1,205 @@
+{
+  "testId" : "2-welcome-page-on-tablet-device",
+  "name" : "Welcome page on tablet device",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Check layout: specs/post/postPage.gspec included tags: tablet",
+      "status" : "info",
+      "time" : 1557820290243,
+      "includedTags" : [ "tablet" ],
+      "sections" : [ {
+        "name" : "Header",
+        "place" : {
+          "filePath" : "specs/post/postPage.gspec",
+          "lineNumber" : 8
+        },
+        "objects" : [ {
+          "name" : "header",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/post/postPage.gspec",
+              "lineNumber" : 10
+            },
+            "name" : "height ~69px",
+            "meta" : [ {
+              "from" : {
+                "object" : "header",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "header",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "67 to 71px",
+              "realDistance" : "69px"
+            } ],
+            "highlight" : [ "header" ]
+          } ]
+        }, {
+          "name" : "header.logo",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/post/postPage.gspec",
+              "lineNumber" : 19
+            },
+            "name" : "inside header 0px left, 8 to 15px top bottom",
+            "meta" : [ {
+              "from" : {
+                "object" : "header.logo",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "header",
+                "edge" : "left"
+              },
+              "expectedDistance" : "0px",
+              "realDistance" : "0px"
+            }, {
+              "from" : {
+                "object" : "header.logo",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "header",
+                "edge" : "top"
+              },
+              "expectedDistance" : "8 to 15px",
+              "realDistance" : "13px"
+            }, {
+              "from" : {
+                "object" : "header.logo",
+                "edge" : "bottom"
+              },
+              "to" : {
+                "object" : "header",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "8 to 15px",
+              "realDistance" : "8px"
+            } ],
+            "highlight" : [ "header.logo", "header" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/post/postPage.gspec",
+              "lineNumber" : 20
+            },
+            "name" : "width 48px",
+            "meta" : [ {
+              "from" : {
+                "object" : "header.logo",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "header.logo",
+                "edge" : "right"
+              },
+              "expectedDistance" : "48px",
+              "realDistance" : "48px"
+            } ],
+            "highlight" : [ "header.logo" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/post/postPage.gspec",
+              "lineNumber" : 21
+            },
+            "name" : "height 48px",
+            "meta" : [ {
+              "from" : {
+                "object" : "header.logo",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "header.logo",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "48px",
+              "realDistance" : "48px"
+            } ],
+            "highlight" : [ "header.logo" ]
+          } ]
+        }, {
+          "name" : "header.caption",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/post/postPage.gspec",
+              "lineNumber" : 24
+            },
+            "name" : "right-of header.logo ~22px",
+            "meta" : [ {
+              "from" : {
+                "object" : "header.caption",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "header.logo",
+                "edge" : "right"
+              },
+              "expectedDistance" : "20 to 24px",
+              "realDistance" : "22px"
+            } ],
+            "highlight" : [ "header.caption", "header.logo" ]
+          } ]
+        } ]
+      }, {
+        "name" : "Menu",
+        "place" : {
+          "filePath" : "specs/post/postPage.gspec",
+          "lineNumber" : 30
+        },
+        "objects" : [ {
+          "name" : "menu",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/post/postPage.gspec",
+              "lineNumber" : 32
+            },
+            "name" : "below header 1 px",
+            "meta" : [ {
+              "from" : {
+                "object" : "menu",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "header",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "1px",
+              "realDistance" : "1px"
+            } ],
+            "highlight" : [ "menu", "header" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/post/postPage.gspec",
+              "lineNumber" : 33
+            },
+            "name" : "aligned vertically all header",
+            "highlight" : [ "menu", "header" ]
+          } ]
+        } ]
+      } ],
+      "objects" : {
+        "header.logo" : {
+          "area" : [ 0, 13, 48, 48 ]
+        },
+        "header" : {
+          "area" : [ 0, 0, 567, 69 ]
+        },
+        "header.caption" : {
+          "area" : [ 70, 20, 261, 39 ]
+        },
+        "menu" : {
+          "area" : [ 0, 70, 567, 63 ]
+        }
+      },
+      "screenshot" : "layout-2-screenshot.png",
+      "type" : "layout"
+    } ]
+  }
+}

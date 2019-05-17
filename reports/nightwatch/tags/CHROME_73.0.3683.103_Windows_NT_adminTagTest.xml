@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="2">
+
+  <testsuite name="tags.adminTagTest"
+    errors="0" failures="0" hostname="" id="" package="adminTagTest" skipped="0"
+    tests="2" time="5.204" timestamp="">
+  
+    <testcase name="Verify that admin can add new tag successfully" classname="tags.adminTagTest" time="1.753" assertions="8">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Verify that Admin can edit tag " classname="tags.adminTagTest" time="3.451" assertions="12">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

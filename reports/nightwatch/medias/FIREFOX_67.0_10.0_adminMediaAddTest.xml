@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="medias.adminMediaAddTest"
+    errors="0" failures="1" hostname="" id="" package="adminMediaAddTest" skipped="0"
+    tests="1" time="0.09500" timestamp="">
+  
+    <testcase name="Verify that admin can add new image" classname="medias.adminMediaAddTest" time="0.09500" assertions="1">  <failure message="Failed [equal]: ({
+  error: [
+    &#39;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#39;,
+    &#34;Build info: version: &#39;3.141.59&#39;, revision: &#39;e82be7d358&#39;, time: &#39;2018-11-14T08:25:53&#39;&#34;,
+    &#34;System info: host: &#39;LGDN18-1210-W10&#39;, ip: &#39;192.168.189.70&#39;, os.name: &#39;Windows 10&#39;, os.arch: &#39;amd64&#39;, os.version: &#39;10.0&#39;, java.version: &#39;1.8.0_201&#39;&#34;,
+    &#39;Driver info: driver.version: unknown&#39;
+  ],
+  message: &#39;Unable to locate element: //tr[1]/td/strong[@class=&#34;has-media-icon&#34;]/a&#39;,
+  sy... == &#39;girl&#39;) - expected [0;32m&#34;girl&#34;[0m but got: [0;31m&#34;[object Object]&#34;[0m">  error: [
+    &#39;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#39;,
+    &#34;Build info: version: &#39;3.141.59&#39;, revision: &#39;e82be7d358&#39;, time: &#39;2018-11-14T08:25:53&#39;&#34;,
+    &#34;System info: host: &#39;LGDN18-1210-W10&#39;, ip: &#39;192.168.189.70&#39;, os.name: &#39;Windows 10&#39;, os.arch: &#39;amd64&#39;, os.version: &#39;10.0&#39;, java.version: &#39;1.8.0_201&#39;&#34;,
+    &#39;Driver info: driver.version: unknown&#39;
+  ],
+  message: &#39;Unable to locate element: //tr[1]/td/strong[@class=&#34;has-media-icon&#34;]/a&#39;,
+  sy... == &#39;girl&#39;
+    at C:\Users\InternDN19.01.04\autoTest_PNVTeam1\tests\nightwatch\medias\adminMediaAddTest.js:18:32
+    at NightwatchAPI.&lt;anonymous&gt; (C:\Users\InternDN19.01.04\autoTest_PNVTeam1\commons\custom-commands\getContainText.js:3:9)
+    at processTicksAndRejections (internal/process/task_queues.js:86:5)</failure>
+<system-out>[[ATTACHMENT|C:\Users\InternDN19.01.04\autoTest_PNVTeam1\reports\medias\adminMediaAddTest\Verify-that-admin-can-add-new-image_FAILED_May-17-2019-094417-GMT+0700-(Indochina.png]]</system-out>
+    <failure message="  error: [">    &#39;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#39;,
+    &#34;Build info: version: &#39;3.141.59&#39;, revision: &#39;e82be7d358&#39;, time: &#39;2018-11-14T08:25:53&#39;&#34;,
+    &#34;System info: host: &#39;LGDN18-1210-W10&#39;, ip: &#39;192.168.189.70&#39;, os.name: &#39;Windows 10&#39;, os.arch: &#39;amd64&#39;, os.version: &#39;10.0&#39;, java.version: &#39;1.8.0_201&#39;&#34;,
+    &#39;Driver info: driver.version: unknown&#39;
+  ],
+  message: &#39;Unable to locate element: //tr[1]/td/strong[@class=&#34;has-media-icon&#34;]/a&#39;,
+  sy... == &#39;girl&#39;
+    at C:\Users\InternDN19.01.04\autoTest_PNVTeam1\tests\nightwatch\medias\adminMediaAddTest.js:18:32
+    at NightwatchAPI.&lt;anonymous&gt; (C:\Users\InternDN19.01.04\autoTest_PNVTeam1\commons\custom-commands\getContainText.js:3:9)
+    at processTicksAndRejections (internal/process/task_queues.js:86:5)</failure>
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

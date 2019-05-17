@@ -1,0 +1,5 @@
+# ignore node_modules
+node_modules
+# ignore reports folder
+# ignore logs
+*.log

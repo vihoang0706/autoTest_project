@@ -1,0 +1,102 @@
+@import ../galen-extras/galen-extras-rules.gspec
+
+@objects
+    toolbar                    .edit-post-header-toolbar
+        insert_button               .editor-inserter button
+        undo_button                 .editor-history__undo
+        redo_button                 .editor-history__redo
+        table_content_button        .table-of-contents button
+        block_navigation_button     .editor-block-navigation
+    editor_body                 div.edit-post-text-editor__body
+        title_label                 .editor-post-title__block div label
+        title_textfield             #post-title-0
+        content_label               label
+        content_textfield           .editor-post-text-editor
+    header__settings            .edit-post-header__settings
+        preview_button              .editor-post-preview
+        publish_button              .editor-post-publish-panel__toggle
+        setting_button              button[aria-label='Settings']
+            icon_setting                .dashicons-admin-generic
+        show_more_tool_button       button[aria-label='Show more tools & options']
+    sidebar                     .edit-post-sidebar
+    panel_tab                   .edit-post-sidebar__panel-tabs
+        tab_item-*                   ul li
+    components_panel_item-*     .components-panel__body h2 button   
+@set
+    title_label_text               Add title
+    component_status_text          Status & Visibility
+    component_category_text        Categories
+    component_tag_text             Tags
+    component_fearture_image_text  Featured Image
+    component_excerpt_text         Excerpt
+    component_discussion_text      Discussion
+    tab_item_document_text         Document
+    tab_item_block_text            Block
+
+@groups
+    components_add_post     editor__body.title_textfield, editor__body.title_label,         editor__body.content_label, editor__body.content_textfield
+    setting_buttons         header__settings.preview_button, header__settings.publish_button, header__settings.setting_button, header__settings.show_more_tool_button
+    toolbar_buttons         toolbar.insert_button, toolbar.undo_button, toolbar.redo_button, toolbar.table_content_button,toolbar.block_navigation_button               
+    (tab_item, tab_items)   panel_tab.tab_item-*
+
+= Post Header Setting =
+    toolbar.insert_button:
+        aligned horizontally all toolbar.undo_button 0px
+    header__settings.preview_button:
+        left-of header__settings.publish_button 7 px
+    &toolbar_buttons:
+        width 36 px
+        height 36 px
+        inside toolbar
+    &setting_button:
+        inside header__settings
+    header__settings.setting_button.icon_setting:
+        visible
+        left-of header__settings.show_more_tool_button 12 px
+
+= Form Add Post =
+    editor_body.title_label:
+        inside editor_body.title_textfield
+    editor_body.title_label:
+        text is "${title_label_text}"
+        css font-size is "16px" 
+        css font-family starts "-apple-system"
+        css font-family ends "serif"
+        css color is "rgba(68, 68, 68, 1)"
+        css border-color is "rgb(68, 68, 68)"
+    editor_body.title_textfield:
+        width 588 px
+        height 84 px
+    editor_body.content_textfield:
+        width 588 px
+        height 200 px
+        below editor_body.title_textfield 4 px
+
+= Side bar =
+    | amount of visible &tab_items should be 2
+    | every &tab_item has height ~ 48px 
+    panel_tab:
+        contains panel_tab.tab_item-*
+    panel_tab.tab_item-1:
+        text is "${tab_item_document_text}"
+    panel_tab.tab_item-2:
+        text is "${tab_item_block_text}"
+    components_panel_item-*:
+        width 279 px 
+        height 47 px 
+    | amount of visible components_panel_item-* should be 6
+    components_panel_item-1:
+        text is "${component_status_text}"
+    components_panel_item-2:
+        text is "${component_category_text}"
+    components_panel_item-3:
+        text is "${component_tag_text}"
+    components_panel_item-4:
+        text is "${component_fearture_image_text}"
+    components_panel_item-5:
+        text is "${component_excerpt_text}"
+    components_panel_item-6:
+        text is "${component_discussion_text}"
+
+
+

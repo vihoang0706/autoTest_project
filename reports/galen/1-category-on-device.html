@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Galen Test Report</title>
+        <link rel="stylesheet" href="galen-report.css"/>
+        <script src="vue.js"></script>
+        <script src="galen-report.js"></script>
+        <script type="text/javascript">
+var REPORT_DATA = {
+  "testId" : "1-category-on-device",
+  "name" : "Category on  device",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Verify that the category page have enough elements",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "Type \"admin\" to email on Login page",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "css: input#user_login",
+          "type" : "text"
+        } ],
+        "time" : 1557997074726,
+        "type" : "node"
+      }, {
+        "name" : "Type \"123456789\" to password on Login page",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "css: input#user_pass",
+          "type" : "text"
+        } ],
+        "time" : 1557997074770,
+        "type" : "node"
+      }, {
+        "name" : "Click submitButton on Login page",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "css: input#wp-submit",
+          "type" : "text"
+        } ],
+        "time" : 1557997074806,
+        "type" : "node"
+      }, {
+        "name" : "Click linkPost on Dashboard Page",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "xpath: //div[@class='wp-menu-name' and text()= 'Posts']",
+          "type" : "text"
+        } ],
+        "time" : 1557997076234,
+        "type" : "node"
+      }, {
+        "name" : "Check layout: specs/category/categoryPage.gspec included tags: ",
+        "status" : "error",
+        "time" : 1557997079589,
+        "sections" : [ {
+          "name" : "Heading Inline Tilte",
+          "place" : {
+            "filePath" : "specs/category/categoryPage.gspec",
+            "lineNumber" : 49
+          },
+          "objects" : [ {
+            "name" : "heading_inline_tilte",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 51
+              },
+              "name" : "visible",
+              "highlight" : [ "heading_inline_tilte" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 52
+              },
+              "name" : "text is \"Categories\"",
+              "highlight" : [ "heading_inline_tilte" ]
+            } ]
+          } ]
+        }, {
+          "name" : "Search Box",
+          "place" : {
+            "filePath" : "specs/category/categoryPage.gspec",
+            "lineNumber" : 53
+          },
+          "objects" : [ {
+            "name" : "search_box.lable",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 55
+              },
+              "name" : "inside search_box",
+              "meta" : [ ],
+              "highlight" : [ "search_box.lable", "search_box" ]
+            } ]
+          }, {
+            "name" : "search_box.textfield",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 55
+              },
+              "name" : "inside search_box",
+              "meta" : [ ],
+              "highlight" : [ "search_box.textfield", "search_box" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 57
+              },
+              "name" : "height 28px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "search_box.textfield",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "search_box.textfield",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "28px",
+                "realDistance" : "28px"
+              } ],
+              "highlight" : [ "search_box.textfield" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 58
+              },
+              "name" : "near search_box.button 4px left",
+              "meta" : [ {
+                "from" : {
+                  "object" : "search_box.textfield",
+                  "edge" : "right"
+                },
+                "to" : {
+                  "object" : "search_box.button",
+                  "edge" : "left"
+                },
+                "expectedDistance" : "4px",
+                "realDistance" : "4px"
+              } ],
+              "highlight" : [ "search_box.textfield", "search_box.button" ]
+            } ]
+          }, {
+            "name" : "search_box.button",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 55
+              },
+              "name" : "inside search_box",
+              "meta" : [ ],
+              "highlight" : [ "search_box.button", "search_box" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 60
+              },
+              "name" : "css color is \"rgba(85, 85, 85, 1)\"",
+              "highlight" : [ "search_box.button" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 61
+              },
+              "name" : "css border-color is \"rgb(204, 204, 204)\"",
+              "highlight" : [ "search_box.button" ]
+            } ]
+          }, {
+            "name" : "bulk_actions_top.button",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 60
+              },
+              "name" : "css color is \"rgba(85, 85, 85, 1)\"",
+              "highlight" : [ "bulk_actions_top.button" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 61
+              },
+              "name" : "css border-color is \"rgb(204, 204, 204)\"",
+              "highlight" : [ "bulk_actions_top.button" ]
+            } ]
+          }, {
+            "name" : "bulk_actions_bottom.button",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 60
+              },
+              "name" : "css color is \"rgba(85, 85, 85, 1)\"",
+              "highlight" : [ "bulk_actions_bottom.button" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 61
+              },
+              "name" : "css border-color is \"rgb(204, 204, 204)\"",
+              "highlight" : [ "bulk_actions_bottom.button" ]
+            } ]
+          } ]
+        }, {
+          "name" : "Form Wrap Tilte",
+          "place" : {
+            "filePath" : "specs/category/categoryPage.gspec",
+            "lineNumber" : 62
+          },
+          "objects" : [ {
+            "name" : "form_wrap_tilte",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 64
+              },
+              "name" : "text is \"Add New Category\"",
+              "highlight" : [ "form_wrap_tilte" ]
+            } ]
+          } ]
+        }, {
+          "name" : "Form Add Category",
+          "place" : {
+            "filePath" : "specs/category/categoryPage.gspec",
+            "lineNumber" : 65
+          },
+          "objects" : [ {
+            "name" : "form_add.term_name_wrap.caption",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 67
+              },
+              "name" : "css font-size is \"13px\"",
+              "highlight" : [ "form_add.term_name_wrap.caption" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 68
+              },
+              "name" : "css font-style is \"italic\"",
+              "highlight" : [ "form_add.term_name_wrap.caption" ]
+            } ]
+          }, {
+            "name" : "form_add.term_slug_wrap.caption",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 67
+              },
+              "name" : "css font-size is \"13px\"",
+              "highlight" : [ "form_add.term_slug_wrap.caption" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 68
+              },
+              "name" : "css font-style is \"italic\"",
+              "highlight" : [ "form_add.term_slug_wrap.caption" ]
+            } ]
+          }, {
+            "name" : "form_add.term_parent_wrap.caption",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 67
+              },
+              "name" : "css font-size is \"13px\"",
+              "highlight" : [ "form_add.term_parent_wrap.caption" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 68
+              },
+              "name" : "css font-style is \"italic\"",
+              "highlight" : [ "form_add.term_parent_wrap.caption" ]
+            } ]
+          }, {
+            "name" : "form_add.term_description_wrap.caption",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 67
+              },
+              "name" : "css font-size is \"13px\"",
+              "highlight" : [ "form_add.term_description_wrap.caption" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 68
+              },
+              "name" : "css font-style is \"italic\"",
+              "highlight" : [ "form_add.term_description_wrap.caption" ]
+            } ]
+          }, {
+            "name" : "form_add.term_name_wrap.textfield",
+            "specs" : [ {
+              "status" : "error",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 72
+              },
+              "name" : "width ~270px",
+              "errors" : [ "\"form_add.term_name_wrap.textfield\" width is 250px which is not in range of 268 to 272px" ],
+              "meta" : [ {
+                "from" : {
+                  "object" : "form_add.term_name_wrap.textfield",
+                  "edge" : "left"
+                },
+                "to" : {
+                  "object" : "form_add.term_name_wrap.textfield",
+                  "edge" : "right"
+                },
+                "expectedDistance" : "268 to 272px",
+                "realDistance" : "250px"
+              } ],
+              "highlight" : [ "form_add.term_name_wrap.textfield" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 73
+              },
+              "name" : "css border-width is \"1px\"",
+              "highlight" : [ "form_add.term_name_wrap.textfield" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 74
+              },
+              "name" : "css border-style is \"solid\"",
+              "highlight" : [ "form_add.term_name_wrap.textfield" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 78
+              },
+              "name" : "aligned vertically all form_add.term_slug_wrap.textfield",
+              "highlight" : [ "form_add.term_name_wrap.textfield", "form_add.term_slug_wrap.textfield" ]
+            } ]
+          }, {
+            "name" : "form_add.term_slug_wrap.textfield",
+            "specs" : [ {
+              "status" : "error",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 72
+              },
+              "name" : "width ~270px",
+              "errors" : [ "\"form_add.term_slug_wrap.textfield\" width is 250px which is not in range of 268 to 272px" ],
+              "meta" : [ {
+                "from" : {
+                  "object" : "form_add.term_slug_wrap.textfield",
+                  "edge" : "left"
+                },
+                "to" : {
+                  "object" : "form_add.term_slug_wrap.textfield",
+                  "edge" : "right"
+                },
+                "expectedDistance" : "268 to 272px",
+                "realDistance" : "250px"
+              } ],
+              "highlight" : [ "form_add.term_slug_wrap.textfield" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 73
+              },
+              "name" : "css border-width is \"1px\"",
+              "highlight" : [ "form_add.term_slug_wrap.textfield" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 74
+              },
+              "name" : "css border-style is \"solid\"",
+              "highlight" : [ "form_add.term_slug_wrap.textfield" ]
+            } ]
+          }, {
+            "name" : "form_add.term_name_wrap.label",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 76
+              },
+              "name" : "css color is \"rgba(35, 40, 45, 1)\"",
+              "highlight" : [ "form_add.term_name_wrap.label" ]
+            } ]
+          }, {
+            "name" : "form_add.term_slug_wrap.label",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 76
+              },
+              "name" : "css color is \"rgba(35, 40, 45, 1)\"",
+              "highlight" : [ "form_add.term_slug_wrap.label" ]
+            } ]
+          }, {
+            "name" : "form_add.term_parent_wrap.label",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 76
+              },
+              "name" : "css color is \"rgba(35, 40, 45, 1)\"",
+              "highlight" : [ "form_add.term_parent_wrap.label" ]
+            } ]
+          }, {
+            "name" : "form_add.term_description_wrap.label",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 76
+              },
+              "name" : "css color is \"rgba(35, 40, 45, 1)\"",
+              "highlight" : [ "form_add.term_description_wrap.label" ]
+            } ]
+          }, {
+            "name" : "form_add.term_parent_wrap.selector",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 80
+              },
+              "name" : "height 28px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "form_add.term_parent_wrap.selector",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "form_add.term_parent_wrap.selector",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "28px",
+                "realDistance" : "28px"
+              } ],
+              "highlight" : [ "form_add.term_parent_wrap.selector" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 81
+              },
+              "name" : "below form_add.term_parent_wrap.label 1px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "form_add.term_parent_wrap.selector",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "form_add.term_parent_wrap.label",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "1px",
+                "realDistance" : "1px"
+              } ],
+              "highlight" : [ "form_add.term_parent_wrap.selector", "form_add.term_parent_wrap.label" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 82
+              },
+              "name" : "aligned vertically left form_add.term_slug_wrap.textfield",
+              "highlight" : [ "form_add.term_parent_wrap.selector", "form_add.term_slug_wrap.textfield" ]
+            } ]
+          }, {
+            "name" : "form_add.add_new_category_button",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 84
+              },
+              "name" : "height 28px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "form_add.add_new_category_button",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "form_add.add_new_category_button",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "28px",
+                "realDistance" : "28px"
+              } ],
+              "highlight" : [ "form_add.add_new_category_button" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 85
+              },
+              "name" : "css color is \"rgba(255, 255, 255, 1)\"",
+              "highlight" : [ "form_add.add_new_category_button" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 86
+              },
+              "name" : "css background is \"rgb(0, 133, 186) none repeat scroll 0% 0% / auto padding-box border-box\"",
+              "highlight" : [ "form_add.add_new_category_button" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 87
+              },
+              "name" : "below form_add.term_description_wrap 13px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "form_add.add_new_category_button",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "form_add.term_description_wrap",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "13px",
+                "realDistance" : "13px"
+              } ],
+              "highlight" : [ "form_add.add_new_category_button", "form_add.term_description_wrap" ]
+            } ]
+          } ]
+        }, {
+          "name" : "Bulk Action",
+          "place" : {
+            "filePath" : "specs/category/categoryPage.gspec",
+            "lineNumber" : 88
+          },
+          "objects" : [ {
+            "name" : "bulk_actions_top.selector",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 90
+              },
+              "name" : "css font-size is \"14px\"",
+              "highlight" : [ "bulk_actions_top.selector" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 91
+              },
+              "name" : "height 28px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "bulk_actions_top.selector",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "bulk_actions_top.selector",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "28px",
+                "realDistance" : "28px"
+              } ],
+              "highlight" : [ "bulk_actions_top.selector" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 90
+              },
+              "name" : "css font-size is \"14px\"",
+              "highlight" : [ "bulk_actions_top.selector" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 91
+              },
+              "name" : "height 28px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "bulk_actions_top.selector",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "bulk_actions_top.selector",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "28px",
+                "realDistance" : "28px"
+              } ],
+              "highlight" : [ "bulk_actions_top.selector" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 93
+              },
+              "name" : "aligned horizontally all bulk_actions_top.button",
+              "highlight" : [ "bulk_actions_top.selector", "bulk_actions_top.button" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 94
+              },
+              "name" : "left-of  bulk_actions_top.button 6px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "bulk_actions_top.selector",
+                  "edge" : "right"
+                },
+                "to" : {
+                  "object" : "bulk_actions_top.button",
+                  "edge" : "left"
+                },
+                "expectedDistance" : "6px",
+                "realDistance" : "6px"
+              } ],
+              "highlight" : [ "bulk_actions_top.selector", "bulk_actions_top.button" ]
+            } ]
+          }, {
+            "name" : "bulk_actions_bottom.selector",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 90
+              },
+              "name" : "css font-size is \"14px\"",
+              "highlight" : [ "bulk_actions_bottom.selector" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 91
+              },
+              "name" : "height 28px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "bulk_actions_bottom.selector",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "bulk_actions_bottom.selector",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "28px",
+                "realDistance" : "28px"
+              } ],
+              "highlight" : [ "bulk_actions_bottom.selector" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 90
+              },
+              "name" : "css font-size is \"14px\"",
+              "highlight" : [ "bulk_actions_bottom.selector" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 91
+              },
+              "name" : "height 28px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "bulk_actions_bottom.selector",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "bulk_actions_bottom.selector",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "28px",
+                "realDistance" : "28px"
+              } ],
+              "highlight" : [ "bulk_actions_bottom.selector" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 96
+              },
+              "name" : "aligned horizontally all bulk_actions_bottom.button",
+              "highlight" : [ "bulk_actions_bottom.selector", "bulk_actions_bottom.button" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 97
+              },
+              "name" : "left-of  bulk_actions_bottom.button 6px",
+              "meta" : [ {
+                "from" : {
+                  "object" : "bulk_actions_bottom.selector",
+                  "edge" : "right"
+                },
+                "to" : {
+                  "object" : "bulk_actions_bottom.button",
+                  "edge" : "left"
+                },
+                "expectedDistance" : "6px",
+                "realDistance" : "6px"
+              } ],
+              "highlight" : [ "bulk_actions_bottom.selector", "bulk_actions_bottom.button" ]
+            } ]
+          } ]
+        }, {
+          "name" : "Table",
+          "place" : {
+            "filePath" : "specs/category/categoryPage.gspec",
+            "lineNumber" : 98
+          },
+          "objects" : [ {
+            "name" : "table",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 100
+              },
+              "name" : "css background is \"rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box\"",
+              "highlight" : [ "table" ]
+            } ]
+          }, {
+            "name" : "table.column_name",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 102
+              },
+              "name" : "text is \"Name\"",
+              "highlight" : [ "table.column_name" ]
+            } ]
+          }, {
+            "name" : "table.column_description",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 104
+              },
+              "name" : "text is \"Description\"",
+              "highlight" : [ "table.column_description" ]
+            } ]
+          }, {
+            "name" : "table.column_slug",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 106
+              },
+              "name" : "text is \"Slug\"",
+              "highlight" : [ "table.column_slug" ]
+            } ]
+          }, {
+            "name" : "table.column_count",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "specs/category/categoryPage.gspec",
+                "lineNumber" : 108
+              },
+              "name" : "text is \"Count\"",
+              "highlight" : [ "table.column_count" ]
+            } ]
+          } ]
+        } ],
+        "objects" : {
+          "table.column_description" : {
+            "area" : [ 630, 233, 70, 19 ]
+          },
+          "form_add.term_description_wrap.label" : {
+            "area" : [ 182, 572, 263, 22 ]
+          },
+          "form_add.term_slug_wrap.label" : {
+            "area" : [ 182, 306, 263, 22 ]
+          },
+          "form_add.term_parent_wrap.label" : {
+            "area" : [ 182, 429, 263, 22 ]
+          },
+          "form_add.term_parent_wrap.caption" : {
+            "area" : [ 182, 483, 263, 76 ]
+          },
+          "form_add.term_name_wrap.textfield" : {
+            "area" : [ 183, 244, 250, 27 ]
+          },
+          "form_add.add_new_category_button" : {
+            "area" : [ 182, 752, 131, 28 ]
+          },
+          "form_add.term_slug_wrap.caption" : {
+            "area" : [ 182, 359, 263, 57 ]
+          },
+          "bulk_actions_top.selector" : {
+            "area" : [ 458, 187, 104, 28 ]
+          },
+          "bulk_actions_top.button" : {
+            "area" : [ 568, 187, 55, 28 ]
+          },
+          "form_add.term_slug_wrap.textfield" : {
+            "area" : [ 183, 329, 250, 27 ]
+          },
+          "table.column_name" : {
+            "area" : [ 499, 233, 37, 19 ]
+          },
+          "bulk_actions_bottom.button" : {
+            "area" : [ 568, 382, 55, 28 ]
+          },
+          "table.column_count" : {
+            "area" : [ 883, 233, 37, 19 ]
+          },
+          "form_add.term_description_wrap.caption" : {
+            "area" : [ 182, 701, 263, 38 ]
+          },
+          "table" : {
+            "area" : [ 457, 224, 493, 149 ]
+          },
+          "search_box" : {
+            "area" : [ 660, 150, 291, 28 ]
+          },
+          "search_box.button" : {
+            "area" : [ 826, 150, 125, 28 ]
+          },
+          "form_wrap_tilte" : {
+            "area" : [ 182, 190, 263, 18 ]
+          },
+          "bulk_actions_bottom.selector" : {
+            "area" : [ 458, 382, 104, 28 ]
+          },
+          "form_add.term_name_wrap.caption" : {
+            "area" : [ 182, 274, 263, 19 ]
+          },
+          "form_add.term_description_wrap" : {
+            "area" : [ 182, 572, 263, 167 ]
+          },
+          "form_add.term_parent_wrap.selector" : {
+            "area" : [ 183, 452, 100, 28 ]
+          },
+          "heading_inline_tilte" : {
+            "area" : [ 182, 108, 108, 42 ]
+          },
+          "search_box.lable" : {
+            "area" : [ 825, 149, 1, 1 ]
+          },
+          "form_add.term_name_wrap.label" : {
+            "area" : [ 182, 221, 263, 22 ]
+          },
+          "table.column_slug" : {
+            "area" : [ 761, 233, 27, 19 ]
+          },
+          "search_box.textfield" : {
+            "area" : [ 660, 150, 162, 28 ]
+          }
+        },
+        "screenshot" : "layout-1-screenshot.png",
+        "type" : "layout"
+      } ],
+      "time" : 1557997074640,
+      "type" : "node"
+    }, {
+      "name" : "Screenshot",
+      "status" : "info",
+      "attachments" : [ "file-2-Screenshot" ],
+      "time" : 1557997079590,
+      "type" : "node"
+    } ]
+  }
+};
+        </script>
+    </head>
+    <body>
+        <div id="app">
+            <div class="top-menu">
+                <a class="link" href="report.html">Back to Test Overview</a>
+                <span class="link" v-on:click="expandAll()">Expand All</span>
+                <span class="link" v-on:click="collapseAll()">Collapse All</span>
+                <span class="link" v-on:click="expandOnlyErrors()">Expand Errors</span>
+            </div>
+            <div v-for="node in reportData.report.nodes">
+                <report-node v-if="node.type === 'node'" v-bind:node="node"></report-node>
+                <div class="node-text" v-if="node.type === 'text'">
+                    {{node.name}}
+                </div>
+                <layout-report v-if="node.type === 'layout'" v-bind:layout="node"></layout-report>
+                <mutation-report v-if="node.type === 'mutation'" v-bind:report="node"></mutation-report>
+            </div>
+        </div>
+
+        <template id="tpl-report-node">
+            <div class="report-node">
+                <div class="node-line" v-bind:class="['status-' + node.status]">
+                    <span class="node-time">{{node.time | formatTime}}</span>
+                    <span class="node-label"
+                        v-on:click="toggleReportNode(node)"
+                        v-bind:class="['status-' + node.status, node.expanded ? 'expanded': 'collapsed', 'contains-children-' + node.hasChildren]"
+                        >{{node.status}}</span>
+                    <span class="node-title">{{node.name}}</span>
+                    <span class="node-extras-link"
+                        v-if="node.extras"
+                        v-on:click="showNodeExtrasPopup(node.extras)"
+                        >extras</span>
+                </div>
+                <ul class="node-attachments" v-if="node.attachments && node.attachments.length > 0">
+                    <li v-for="attachment in node.attachments">
+                        <a class="icon-sprite-before node-attachment" v-bind:href="attachment">{{attachment}}</a>
+                    </li>
+                </ul>
+                <div class="child-nodes" v-if="node.type === 'node'" v-bind:class="{'child-nodes-expanded': node.expanded}">
+                    <div class="stacktrace" v-if="node.stacktrace">{{node.stacktrace}}</div>
+                    <div v-for="childNode in node.nodes">
+                        <report-node v-if="childNode.type === 'node'" v-bind:node="childNode"></report-node>
+                        <div class="node-text" v-if="childNode.type === 'text'">
+                            {{childNode.name}}
+                        </div>
+                        <layout-report v-if="childNode.type === 'layout'" v-bind:layout="childNode" v-bind:isSubLayout="false"></layout-report>
+                        <mutation-report v-if="childNode.type === 'mutation'" v-bind:report="childNode"></mutation-report>
+                    </div>
+                </div>
+                <div class="extras-popup popup-wrapper" v-if="extrasPopup.show">
+                    <div class="popup-shadow" v-on:click="extrasPopup.show = false"> </div>
+                    <div class="popup-container" style="top: 30px;">
+                        <div class="popup-body">
+                            <table class="extras-table">
+                                <tbody>
+                                    <tr v-for="extrasItem in extrasPopup.extras">
+                                        <td>{{extrasItem.name}}</td>
+                                        <td>
+                                            <div v-if="extrasItem.value.type === 'link'">
+                                                <a class="link" v-bind:href="extrasItem.value.value">{{extrasItem.value.value}}</a>
+                                            </div>
+                                            <div v-else v-if="extrasItem.value.type === 'file'">
+                                                <a class="link" v-bind:href="extrasItem.value.value">{{extrasItem.value.value}}</a>
+                                            </div>
+                                            <div v-else v-if="extrasItem.value.type === 'text'">
+                                                {{extrasItem.value.value}}
+                                            </div>
+                                            <div v-else v-if="extrasItem.value.type === 'image'">
+                                                <a v-bind:href="extrasItem.value.value"><img v-bind:src="extrasItem.value.value"/></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-mutation-report">
+            <div class="mutation-report">
+                <div class="node-line" v-bind:class="['status-' + report.status]">
+                    <span class="node-time">{{report.time | formatTime }}</span>
+                    <span class="node-label"
+                        v-on:click="toggleReportNode(report)"
+                        v-bind:class="['status-' + report.status, report.expanded ? 'expanded': 'collapsed', 'contains-children-true']"
+                        >MUTATION</span>
+                    <span class="node-title">{{report.name}}</span>
+                </div>
+                <div class="child-nodes" v-bind:class="{'child-nodes-expanded': report.expanded}">
+                    <table class="mutation-table">
+                        <thead>
+                            <tr>
+                                <th v-for="column in tableColumns" v-bind:class="{'sorted-column': sorting.columnField === column.field}">
+                                    <span class="link" v-on:click="sortTable(column)">{{column.name}}</span>
+                                    <span class="sorting-icon"
+                                        v-if="sorting.columnField === column.field"
+                                        v-bind:class="[sorting.order === 1 ? 'sorting-down' : 'sorting-up']"></span>
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="mutation-table-total">
+                                <td> <b>Total</b> </td>
+                                <td class="cell-passed">{{report.mutationReport.totalPassed}}</td>
+                                <td class="cell-failed">{{report.mutationReport.totalFailed}}</td>
+                                <td class="cell-failed">{{report.mutationReport.failedRatio | roundFailedRatio}}%</td>
+                                <td></td>
+                            </tr>
+                            <tr v-for="mutation in mutations">
+                                <td><span class="link" v-on:click="toggleMutationFor(mutation.name)">{{mutation.name}}</span></td>
+                                <td class="cell-passed">{{mutation.passed}}</td>
+                                <td class="cell-failed">{{mutation.failed}}</td>
+                                <td class="cell-failed">{{mutation.failedRatio}}%</td>
+                                <td>
+                                    <div v-if="showFailedMutationsFor === mutation.name">
+                                        All failed mutations:
+                                        <ul>
+                                            <li v-for="mutationText in mutation.failedMutations">{{mutationText}}</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-layout-report">
+            <div class="layout-report">
+                <div class="node-line" v-bind:class="['status-' + layout.status]">
+                    <span class="node-time">{{layout.time | formatTime}}</span>
+                    <span class="node-label"
+                        v-on:click="toggleReportNode(layout)"
+                        v-bind:class="['status-' + layout.status, layout.expanded ? 'expanded': 'collapsed', 'contains-children-' + layout.hasChildren]"
+                        >LAYOUT</span>
+                    <span class="node-title">{{layout.name}}</span>
+                </div>
+                <div class="node-horizontal-menu">
+                    <span class="link" v-on:click="showFailureMap()">Failure Map</span> |
+                    <span class="link" v-on:click="showHeatMap()">Heat Map</span>
+                </div>
+
+                <div class="child-nodes" v-bind:class="{'child-nodes-expanded': layout.expanded}">
+                    <layout-section v-for="section in layout.sections" v-bind:section="section" v-bind:bus="bus" v-bind:layout="layout" @spec-clicked="specClicked"></layout-section>
+                </div>
+
+                <screenshot-popup v-if="screenshotPopup.shown"
+                    v-bind:screenshot="screenshotPopup.screenshotFile"
+                    v-bind:highlight="screenshotPopup.highlightAreas"
+                    v-bind:guides="screenshotPopup.metaGuides"
+                    v-bind:spec="screenshotPopup.spec"
+                    @close="screenshotPopup.shown = false"
+                    ></screenshot-popup>
+            </div>
+        </template>
+
+        <template id="tpl-layout-section">
+            <div class="layout-section" v-bind:class="{'has-failure': section.hasFailure}">
+                <div class="title icon-sprite-before"
+                    v-on:click="toggleReportNode(section)"
+                    v-bind:title="section.place ? section.place.filePath + ':' + section.place.lineNumber : ''"
+                    >{{section.name}}</div>
+                <div class="child-nodes" v-bind:class="{'child-nodes-expanded': section.expanded}">
+                    <layout-section v-for="subSection in section.sections" v-bind:section="subSection" v-bind:bus="bus" v-bind:layout="layout"></layout-section>
+                    <object-node v-for="object in section.objects" v-bind:object="object" v-bind:bus="bus" v-bind:layout="layout"></object-node>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-object-node">
+            <div class="layout-object" v-bind:class="{'has-failure': object.hasFailure}">
+                <div class="title icon-sprite-before"
+                    v-on:click="toggleReportNode(object)"
+                    >{{object.name}}:</div>
+                <div class="child-nodes" v-bind:class="{'child-nodes-expanded': object.expanded}">
+                    <layout-spec v-for="spec in object.specs" v-bind:spec="spec" v-bind:bus="bus" v-bind:layout="layout"></layout-spec>
+
+                    <layout-spec-group v-if="object.specGroups"
+                        v-for="specGroup in object.specGroups"
+                        v-bind:specgroup="specGroup"
+                        v-bind:bus="bus"
+                        v-bind:layout="layout"
+                        ></layout-spec-group>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-spec-group">
+            <div class="layout-section" v-bind:class="{'has-failure': specgroup.hasFailure}">
+                <div class="title icon-sprite-before"
+                    v-on:click="toggleReportNode(specgroup)"
+                    >{{specgroup.name}}:</div>
+                <div class="child-nodes" v-bind:class="{'child-nodes-expanded': specgroup.expanded}">
+                    <layout-spec v-for="spec in specgroup.specs" v-bind:spec="spec" v-bind:bus="bus" v-bind:layout="layout"></layout-spec>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-layout-spec">
+            <div class="layout-spec" v-bind:class="[isFailed ? 'has-failure': '', 'status-' + spec.status]">
+                <div class="title icon-sprite-before"
+                    v-on:click="showSpec"
+                    v-bind:title="spec.place ? spec.place.filePath + ':' + spec.place.lineNumber : ''"
+                    >{{spec.name}}</div>
+                <ul class="error-messages" v-if="isFailed">
+                    <li class="error-message" v-if="spec.imageComparison">
+                        <span class="link" v-on:click="imageComparisonShown = true">Show image comparison</span>
+                    </li>
+                    <li class="error-message" v-for="error in spec.errors">{{error}}</li>
+                </ul>
+                <div v-if="spec.subLayout" class="sublayout">
+                    <layout-section v-if="spec.subLayout.sections" v-for="section in spec.subLayout.sections" v-bind:section="section" v-bind:bus="bus" v-bind:layout="spec.subLayout"></layout-section>
+                </div>
+                <image-comparison-popup v-if="imageComparisonShown" v-on:close="imageComparisonShown = false" v-bind:imagedata="spec.imageComparison"/>
+            </div>
+        </template>
+
+
+        <template id="tpl-image-comparison-popup">
+            <div class="image-comparison-popup">
+                <div class="popup-shadow" v-on:click="$emit('close')"> </div>
+                <div class="popup-container" v-bind:style="{top: position.top + 'px', left: position.left + 'px', width: position.width + 'px', height: position.height + 'px'}">
+                    <div class="popup-body">
+                        <div class="image-layout">
+                            <h5>Actual Image</h5>
+                            <img v-bind:src="imagedata.actualImage"/>
+                        </div>
+                        <div class="image-layout">
+                            <h5>Expected Image</h5>
+                            <img v-bind:src="imagedata.expectedImage"/>
+                        </div>
+                        <div class="image-layout">
+                            <h5>Comparison Map</h5>
+                            <img v-bind:src="imagedata.comparisonMapImage"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+
+        <template id="tpl-screenshot-popup">
+            <div>
+                <div class="popup-shadow" v-on:click="$emit('close')"> </div>
+                <div class="popup-container" v-bind:style="{top: position.top + 'px', left: position.left + 'px', width: position.width + 'px', height: position.height + 'px'}">
+                    <div class="popup-body">
+                        <div class="image-cropper" v-bind:style="{width: crop.width + 'px', height: crop.height + 'px'}">
+                            <img v-bind:src="screenshot" v-bind:style="{'margin-left': crop.offsetLeft +'px', 'margin-top': crop.offsetTop + 'px'}"/>
+                        </div>
+                        <svg v-bind:width="crop.width + 'px'" v-bind:height="crop.height + 'px'">
+                            <g v-for="object in highlight.objects">
+                                <rect
+                                    v-bind:x="object.area.x + crop.offsetLeft"
+                                    v-bind:y="object.area.y + crop.offsetTop"
+                                    v-bind:width="object.area.width"
+                                    v-bind:height="object.area.height"
+                                    style="opacity: 0.8"
+                                    v-bind:style="{fill: object.fill?object.color:'none', 'stroke-width': object.border?3:0, stroke: object.border?object.color:'none'}"/>
+                                <g v-if="object.caption">
+                                    <rect
+                                        v-bind:x="object.area.x + crop.offsetLeft"
+                                        v-bind:y="object.area.y + crop.offsetTop - 20"
+                                        v-bind:width="object.name.length * 15 + 10"
+                                        v-bind:height="20"
+                                        style="opacity: 0.8; stroke-width: 0; stroke: none;"
+                                        v-bind:style="{fill: object.color}"/>
+                                    <text
+                                        v-bind:x="object.area.x + crop.offsetLeft + 5"
+                                        v-bind:y="object.area.y + crop.offsetTop - 5"
+                                        fill="#ffffff"
+                                        font-weight="bold"
+                                        font-family="helvetica"
+                                        font-size="15px"
+                                        >{{object.name}}</text>
+                                </g>
+                            </g>
+
+                            <g v-for="guideElements in guides">
+                                <g v-for="guide in guideElements">
+                                    <line class="meta-line-guide" v-if="guide.type === 'line'"
+                                        v-bind:x1="guide.x1 + crop.offsetLeft"
+                                        v-bind:y1="guide.y1 + crop.offsetTop"
+                                        v-bind:x2="guide.x2 + crop.offsetLeft"
+                                        v-bind:y2="guide.y2 + crop.offsetTop"/>
+
+                                    <g v-if="guide.type === 'text'">
+                                        <text class="meta-text"
+                                            v-bind:x="guide.x + crop.offsetLeft"
+                                            v-bind:y="guide.y + crop.offsetTop"
+                                            v-bind:transform="guide.vertical ? 'rotate(-90,' + (guide.x + crop.offsetLeft) + ', ' + (guide.y + crop.offsetTop) +')': 'rotate(0)'"
+                                            >{{guide.text}}</text>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="popup-side-panel">
+                            <div v-if="spec">
+                                <span class="spec-name">{{spec.name}}</span>
+                                <ul v-if="spec.errors" class="spec-errors">
+                                    <li v-for="error in spec.errors">{{error}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <script>renderTestReport(REPORT_DATA);</script>
+    </body>
+</html>

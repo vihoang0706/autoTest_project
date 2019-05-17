@@ -1,0 +1,213 @@
+{
+  "testId" : "2-login-page-on-tablet-device",
+  "name" : "Login Page on tablet device",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Type \"admin\" to username on Login page",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "css: input[id='user_login']",
+        "type" : "text"
+      } ],
+      "time" : 1557826384614,
+      "type" : "node"
+    }, {
+      "name" : "Type \"123456789\" to password on Login page",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "css: input[id='user_pass']",
+        "type" : "text"
+      } ],
+      "time" : 1557826384660,
+      "type" : "node"
+    }, {
+      "name" : "Click loginButton on Login page",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "css: input[id='wp-submit']",
+        "type" : "text"
+      } ],
+      "time" : 1557826384712,
+      "type" : "node"
+    }, {
+      "name" : "Check layout: specs/login/loginPage.gspec included tags: tablet",
+      "status" : "error",
+      "time" : 1557826385577,
+      "includedTags" : [ "tablet" ],
+      "sections" : [ {
+        "name" : "Login",
+        "place" : {
+          "filePath" : "specs/login/loginPage.gspec",
+          "lineNumber" : 18
+        },
+        "objects" : [ {
+          "name" : "login_form",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/login/loginPage.gspec",
+              "lineNumber" : 21
+            },
+            "name" : "centered horizontally inside screen",
+            "errors" : [ "\"login_form\" is not centered horizontally inside \"screen\". Offset is 60px" ],
+            "highlight" : [ "login_form", "screen" ]
+          } ]
+        }, {
+          "name" : "username_textfield",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/login/loginPage.gspec",
+              "lineNumber" : 23
+            },
+            "name" : "below username_label 2 px",
+            "errors" : [ "\"username_textfield\" is -34px below \"username_label\" instead of 2px" ],
+            "meta" : [ {
+              "from" : {
+                "object" : "username_textfield",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "username_label",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "2px",
+              "realDistance" : "-34px"
+            } ],
+            "highlight" : [ "username_textfield", "username_label" ]
+          } ]
+        }, {
+          "name" : "username_label",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/login/loginPage.gspec",
+              "lineNumber" : 25
+            },
+            "name" : "above username_textfield 2 px",
+            "errors" : [ "\"username_label\" is -34px above \"username_textfield\" instead of 2px" ],
+            "meta" : [ {
+              "from" : {
+                "object" : "username_label",
+                "edge" : "bottom"
+              },
+              "to" : {
+                "object" : "username_textfield",
+                "edge" : "top"
+              },
+              "expectedDistance" : "2px",
+              "realDistance" : "-34px"
+            } ],
+            "highlight" : [ "username_label", "username_textfield" ]
+          } ]
+        }, {
+          "name" : "password_textfield",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/login/loginPage.gspec",
+              "lineNumber" : 27
+            },
+            "name" : "below password_label 2px",
+            "errors" : [ "\"password_textfield\" is -34px below \"password_label\" instead of 2px" ],
+            "meta" : [ {
+              "from" : {
+                "object" : "password_textfield",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "password_label",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "2px",
+              "realDistance" : "-34px"
+            } ],
+            "highlight" : [ "password_textfield", "password_label" ]
+          } ]
+        }, {
+          "name" : "password_label",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/login/loginPage.gspec",
+              "lineNumber" : 29
+            },
+            "name" : "above password_textfield 2 px",
+            "errors" : [ "\"password_label\" is -34px above \"password_textfield\" instead of 2px" ],
+            "meta" : [ {
+              "from" : {
+                "object" : "password_label",
+                "edge" : "bottom"
+              },
+              "to" : {
+                "object" : "password_textfield",
+                "edge" : "top"
+              },
+              "expectedDistance" : "2px",
+              "realDistance" : "-34px"
+            } ],
+            "highlight" : [ "password_label", "password_textfield" ]
+          } ]
+        }, {
+          "name" : "rememberMe_checkbox",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/login/loginPage.gspec",
+              "lineNumber" : 31
+            },
+            "name" : "left-of rememberMe_label 4 px",
+            "errors" : [ "\"rememberMe_checkbox\" is -25px left of \"rememberMe_label\" instead of 4px" ],
+            "meta" : [ {
+              "from" : {
+                "object" : "rememberMe_checkbox",
+                "edge" : "right"
+              },
+              "to" : {
+                "object" : "rememberMe_label",
+                "edge" : "left"
+              },
+              "expectedDistance" : "4px",
+              "realDistance" : "-25px"
+            } ],
+            "highlight" : [ "rememberMe_checkbox", "rememberMe_label" ]
+          } ]
+        } ]
+      } ],
+      "objects" : {
+        "login_form" : {
+          "area" : [ 162, 217, 320, 269 ]
+        },
+        "username_textfield" : {
+          "area" : [ 141, 267, 272, 40 ]
+        },
+        "password_label" : {
+          "area" : [ 156, 326, 278, 56 ]
+        },
+        "screen" : {
+          "area" : [ 0, 0, 584, 700 ]
+        },
+        "password_textfield" : {
+          "area" : [ 156, 348, 272, 40 ]
+        },
+        "rememberMe_label" : {
+          "area" : [ 156, 407, 110, 16 ]
+        },
+        "username_label" : {
+          "area" : [ 141, 245, 278, 56 ]
+        },
+        "rememberMe_checkbox" : {
+          "area" : [ 156, 402, 25, 25 ]
+        }
+      },
+      "screenshot" : "layout-3-screenshot.png",
+      "type" : "layout"
+    }, {
+      "name" : "Screenshot",
+      "status" : "info",
+      "attachments" : [ "file-4-Screenshot" ],
+      "time" : 1557826385577,
+      "type" : "node"
+    } ]
+  }
+}

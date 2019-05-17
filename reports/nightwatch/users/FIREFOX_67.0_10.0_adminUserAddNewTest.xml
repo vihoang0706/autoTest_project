@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="3"
+            failures="1"
+            tests="1">
+
+  <testsuite name="users.adminUserAddNewTest"
+    errors="3" failures="1" hostname="" id="" package="adminUserAddNewTest" skipped="0"
+    tests="1" time="18.20" timestamp="">
+  
+    <testcase name="Verify that user can add a new user with valid information" classname="users.adminUserAddNewTest" time="18.20" assertions="13">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+      <failure message="Timed out while waiting for element &lt;//li[@id=&#34;wp-admin-bar-logout&#34;]/a[text()=&#34;Log Out&#34;]&gt; to be present for 5000 milliseconds. - expected [0;32m&#34;visible&#34;[0m but got: [0;31m&#34;not found&#34;[0m">    at Page.isLogOutVisible (C:\Users\InternDN19.01.04\autoTest_PNVTeam1\page-objects\nightwatch\base-objects\adminBasePage.js:63:18)
+    at NightwatchAPI.&lt;anonymous&gt; (C:\Users\InternDN19.01.04\autoTest_PNVTeam1\tests\nightwatch\users\adminUserAddNewTest.js:41:27)
+    at processTicksAndRejections (internal/process/task_queues.js:79:9)</failure>
+<system-out>[[ATTACHMENT|C:\Users\InternDN19.01.04\autoTest_PNVTeam1\reports\users\adminUserAddNewTest\Verify-that-user-can-add-a-new-user-with-valid-information_FAILED_May-17-2019-094357-GMT+0700-(Indochina.png]]</system-out>
+    <failure message="    at Page.isLogOutVisible (C:\Users\InternDN19.01.04\autoTest_PNVTeam1\page-objects\nightwatch\base-objects\adminBasePage.js:63:18)">    at NightwatchAPI.&lt;anonymous&gt; (C:\Users\InternDN19.01.04\autoTest_PNVTeam1\tests\nightwatch\users\adminUserAddNewTest.js:41:27)
+    at processTicksAndRejections (internal/process/task_queues.js:79:9)</failure>
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

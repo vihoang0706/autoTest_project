@@ -1,0 +1,61 @@
+@objects
+    help_button             #contextual-help-link
+    title                   .wrap h1
+    media_upload_form       #file-form
+        upload_input                    #async-upload
+        upload_button                   #html-upload
+        multi_file_link                 p[class="upload-html-bypass hide-if-no-js"] a
+        upload_file_size        p.max-upload-size
+
+@set
+    common_margin                   10 to 30px
+    common_font_size                13px
+    title_text                      Upload New Media
+    upload_button_text              Upload
+    upload_file_size_text           Maximum upload file size: 2 MB.
+    multi_file_link_text            Switch to the multi-file uploader
+    upload_button_desktop_width     ~63 px
+    upload_button_border_color      rgb(0, 115, 170) rgb(0, 103, 153) rgb(0, 103, 153)
+
+@groups
+    form_elements media_upload_form.upload_button, media_upload_form.multi_file_link, media_upload_form.upload_file_size
+
+= Help =
+    help_button:
+        width ~73px
+        height ~28px
+        inside screen 939px left 
+
+= Title =
+    title:
+        inside screen
+        width 832px
+        height 42px
+        text is "${title_text}"
+        above media_upload_form.upload_input ${common_margin} 
+
+= Form Upload =
+    media_upload_form.upload_input:
+        inside media_upload_form
+        left-of media_upload_form.upload_button 4 px
+        below title ${common_margin} 
+        aligned horizontally all media_upload_form.upload_button
+        width 407 % of media_upload_form.upload_button/width 
+        css font-size is "14px" 
+    media_upload_form.upload_button:
+        width ${upload_button_desktop_width}
+        text is "${upload_button_text}"
+        inside media_upload_form 262 px left
+        css border-color is "${upload_button_border_color}"
+    media_upload_form.multi_file_link:
+        text is "${multi_file_link_text}"
+        below media_upload_form.multi_file_link -36 px
+        visible 
+    media_upload_form.upload_file_size:
+        text is "${upload_file_size_text}"
+        below media_upload_form.multi_file_link ${common_margin}
+        visible
+
+= Skeleton =
+    &form_elements:
+        css font-size is "${common_font_size}" 
